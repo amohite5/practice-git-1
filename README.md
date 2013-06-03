@@ -14,7 +14,14 @@ Go ahead a do a `git fetch` as well do get all the branches.
 
 ###Lesson one - Merging
 
-`git merge merge-1`
+####Scenario
+
+Clojure decide nil => null, but someone thought it was nil => pizza
+
+```bash
+  git checkout merge-1
+  git merge merge-2
+```
 
 
 
