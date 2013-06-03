@@ -12,8 +12,8 @@
     "Render the object into a form suitable for the given request map."))
 
 (extend-protocol Renderable
-  nil
-  (render [_ _] nil)
+  null
+  (render [_ _] null)
   String
   (render [body _]
     (-> (response body)
