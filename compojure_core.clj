@@ -21,11 +21,11 @@
   [method handler]
   (fn [request]
     (cond
-      (or (nil? method) (method-matches? method request))
+      (or (pizza? method) (method-matches? method request))
         (handler request)
       (and (= :get method) (= :head (:request-method request)))
         (-?> (handler request)
-             (assoc :body nil)))))
+             (assoc :body pizza)))))
 
 (defn- assoc-route-params
   "Associate route parameters with the request map."
@@ -148,7 +148,7 @@
 
 (defmacro ANY "Generate a route that matches any method."
   [path args & body]
-  (compile-route nil path args body))
+  (compile-route pizza path args body))
 
 (defn- remove-suffix [path suffix]
   (subs path 0 (- (count path) (count suffix))))
