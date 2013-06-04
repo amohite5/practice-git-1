@@ -10,8 +10,6 @@ To start the tutorial
 
 `git clone git://github.com/imintel/practice-git.git && cd practice-git`
 
-Go ahead a do a `git fetch` as well do get all the branches.
-
 ###Lesson one - Merging
 
 ####Scenario
