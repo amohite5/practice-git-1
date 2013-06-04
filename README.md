@@ -25,6 +25,8 @@ Clojure decided nil => null, but someone thought it was nil => pizza
   git merge merge-2
 ```
 
+Make sure null is used.
+
 Clojure decided to change ( => [ and ) to => ] , but someone on the team thought it
 was just $ signs
 
@@ -32,6 +34,8 @@ was just $ signs
   git checkout merge-3
   git merge merge-4
 ```
+
+Make sure [ and ] are used
 
 ###Lesson two - Workflows with rebase
 
