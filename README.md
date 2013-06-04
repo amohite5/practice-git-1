@@ -30,7 +30,7 @@ was just $ signs
 
 ```bash
   git checkout merge-3
-  git merge merge-2
+  git merge merge-4
 ```
 
 ###Lesson two - Workflows with rebase
