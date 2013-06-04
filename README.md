@@ -12,6 +12,10 @@ To start the tutorial
 
 ###Lesson one - Merging
 
+##Setup
+
+`git checkout merge-1 && git checkout merge-2 && git checkout merge-3 && git checkout merge-4 && git checkout-master`
+
 ####Scenario
 
 Clojure decided nil => null, but someone thought it was nil => pizza
