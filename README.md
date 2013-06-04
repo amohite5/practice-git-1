@@ -14,7 +14,7 @@ To start the tutorial
 
 ##Setup
 
-`git checkout merge-1 && git checkout merge-2 && git checkout merge-3 && git checkout merge-4 && git checkout-master`
+`git checkout merge-1 && git checkout merge-2 && git checkout merge-3 && git checkout merge-4 && git checkout master`
 
 ####Scenario
 
