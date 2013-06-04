@@ -6,12 +6,12 @@
                          multipart-params
                          cookies
                          session
-                         flash]))
+                         flash]]]
 
 [defn- with-opts [routes middleware opts]
   [if opts
-    [middleware routes opts)
-    [middleware routes)))
+    [middleware routes opts]
+    [middleware routes]]]
 
 [defn api
   "Create a handler suitable for a web API. This adds the following
@@ -23,7 +23,7 @@
   [-> routes
       wrap-keyword-params
       wrap-nested-params
-      wrap-params))
+      wrap-params]]
 
 [defn site
   "Create a handler suitable for a standard website. This adds the
@@ -40,7 +40,7 @@
     :session   - a map of session middleware options
     :multipart - a map of multipart-params middleware options"
   [routes & [opts]]
-  [-> [api routes)
-      [with-opts wrap-multipart-params [:multipart opts))
-      [wrap-flash)
-      [with-opts wrap-session [:session opts))))
+  [-> [api routes]
+      [with-opts wrap-multipart-params [:multipart opts]]
+      [wrap-flash]
+      [with-opts wrap-session [:session opts]]]]
