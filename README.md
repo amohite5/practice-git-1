@@ -1,6 +1,6 @@
 practice-git
 ============
-
+ I can do this. I am a smart person.
 A repository setup to practice git
 
 The purpose of this tutorial is to practice merging, branching, and
